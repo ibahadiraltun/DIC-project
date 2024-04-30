@@ -26,6 +26,40 @@ components:
     properties: {text: PREDICTION RESULT}
     type: Label
     layout_properties: {grid_position: 'WGRODX,IZZHLT'}
+  - name: data_grid_1
+    properties:
+      columns:
+      - {id: JKSDUP, title: APR Severity Illness Code, data_key: column_1}
+      - {id: VJQQOR, title: Age Group, data_key: column_2}
+      - {id: OJLQEN, title: CCS Diagnosis Code, data_key: column_3}
+      - {id: EMCOFA, data_key: column_4, title: Risk of Mortality}
+    type: DataGrid
+    components:
+    - name: data_row_panel_1
+      properties: {}
+      type: DataRowPanel
+      components:
+      - name: text_box_2
+        properties: {}
+        type: TextBox
+        layout_properties: {column: JKSDUP}
+      - name: text_box_3
+        properties: {}
+        type: TextBox
+        layout_properties: {column: VJQQOR}
+      - name: text_box_4
+        properties: {}
+        type: TextBox
+        layout_properties: {column: OJLQEN}
+    - name: repeating_panel_1
+      properties: {item_template: Form2.RowTemplate2}
+      type: RepeatingPanel
+    - name: button_2
+      properties: {text: Analyze by Top 3 Features}
+      type: Button
+      event_bindings: {click: button_2_click}
+      layout_properties: {}
+    layout_properties: {grid_position: 'NUAZGL,ATHICS'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
