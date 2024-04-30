@@ -9,7 +9,7 @@ components:
   layout_properties: {slot: default}
   components:
   - name: label_1
-    properties: {text: 'Enter the comma separated test data that contains 13 features:'}
+    properties: {text: 'Enter the SPACE separated test data that contains 13 features:'}
     type: Label
     layout_properties: {grid_position: 'JJMXTE,CXZGOD'}
   - name: text_box_1
@@ -23,7 +23,7 @@ components:
     layout_properties: {grid_position: 'AAAAQV,XIRWPZ'}
     event_bindings: {click: button_1_click}
   - name: label_prediction
-    properties: {text: 'Prediction Result:'}
+    properties: {text: PREDICTION RESULT}
     type: Label
     layout_properties: {grid_position: 'WGRODX,IZZHLT'}
 - type: FlowPanel
